@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="../styles/register.css">
-    <link rel="icon" href="../icons/register.png">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="icon" href="icons/register.png">
     <title>S'inscrire</title>
 </head>
 <body>
@@ -48,7 +48,7 @@
         </div>
 
         <button type="submit">S'inscrire</button>
-        <span><a href="../bienvenue.jsp">Revenir à la page d'accueil</a></span>
+        <span><a href="bienvenue.jsp">Revenir à la page d'accueil</a></span>
     </form>
 </div>
 </body>

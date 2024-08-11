@@ -30,8 +30,10 @@ public class UserSessionBean {
         em.getTransaction().commit();
     }
 
-    public UserEntity updateUser(UserEntity user) {
-        return em.merge(user);
+    public void updateUser(UserEntity user) {
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
     }
 
     public void deleteUser(UserEntity user) {

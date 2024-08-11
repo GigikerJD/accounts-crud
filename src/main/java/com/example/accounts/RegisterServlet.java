@@ -32,6 +32,12 @@ public class RegisterServlet extends HttpServlet{
         String role = req.getParameter("role");
         String birthdate = req.getParameter("birthdate");
 
+        logger.info(req.getRequestURI());
+        logger.info(req.getQueryString());
+        logger.info(req.getServletPath());
+        logger.info(req.getParameterNames().toString());
+        logger.info(req.getMethod());
+
         if(age < 0 || age > 100){
             res.sendError(HttpServletResponse.SC_BAD_REQUEST, "Age must be between 0 and 100");
         }

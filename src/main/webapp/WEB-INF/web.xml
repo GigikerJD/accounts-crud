@@ -30,8 +30,24 @@
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>register-servlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>usersServlet</servlet-name>
+        <servlet-class>com.example.accounts.UsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>usersServlet</servlet-name>
+        <url-pattern>users-servlet</url-pattern>
+    </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>bienvenue.jsp</welcome-file>
     </welcome-file-list>
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
 </web-app>
