@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="styles/bienvenue.css">
-        <link rel="icon" href="icons/content-management.png">
+        <link rel="stylesheet" href="../styles/bienvenue.css">
+        <link rel="icon" href="../icons/content-management.png">
         <title>Bienvenue sur l'appli - Accounts CRUD !</title>
     </head>
     <body>

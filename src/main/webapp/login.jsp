@@ -11,11 +11,11 @@
             <form action="login-servlet" method="get">
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Veuillez taper votre email..." required/>
+                    <input type="email" id="email" name="email" placeholder="Veuillez taper votre email..." required/>
                 </div>
                 <div class="form-group">
                     <label for="password">Mot de passe:</label>
-                    <input type="password" id="password" placeholder="Veuillez saisir votre mot de passe" required/>
+                    <input type="password" id="password" name="password" placeholder="Veuillez saisir votre mot de passe" required/>
                 </div>
                 <button type="submit">Se connecter</button>
                 <span><a href="bienvenue.jsp">Revenir à la page d'accueil</a></span>
