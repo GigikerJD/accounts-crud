@@ -1,0 +1,116 @@
+body {
+    background-color: #dfdfdf;
+    color: #121212;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono Medium", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+#register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    max-width: 600px; /* Maximum width for larger screens */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack labels and inputs on top of each other */
+    margin-bottom: 15px;
+}
+
+label {
+    color: #141414;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    outline: none;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensure input takes full width */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #343434;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+span {
+    margin: auto;
+    text-align: center; /* Center text inside span */
+    display: block;
+    margin-top: 20px;
+}
+
+/* Style for links inside span */
+span a {
+    color: #343434;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Change link color on hover */
+span a:hover {
+    color: #555555;
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+    #register-container {
+        padding: 20px 40px;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .form-group {
+        flex-direction: row; /* Display labels and inputs side by side */
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 0;
+        margin-right: 20px;
+        text-align: right;
+        flex: 1;
+    }
+
+    input, select, button {
+        flex: 2;
+    }
+}
