@@ -10,7 +10,7 @@
         <nav>
             <a href="login.jsp">Connexion</a>
             <a href="register.jsp">Inscription</a>
-            <a href="tableau.jsp">Mes comptes</a>
+            <a href="users-servlet">Mes comptes</a>
         </nav>
         <h1><%= "ACCOUNTS CRUD" %></h1><br/>
         <a href="hello-servlet">ACCOUNTS CRUD</a>
